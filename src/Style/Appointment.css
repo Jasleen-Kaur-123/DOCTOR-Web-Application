@@ -1,0 +1,306 @@
+.appointment-main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e6f7ff 0%, #b3eaff 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 0 0 3rem 0;
+}
+
+.appointment-header {
+  text-align: center;
+  padding: 1rem 1rem 1.2rem 1rem;
+}
+
+.appointment-header h1 {
+  color: #002b8a;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.appointment-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 1.2rem;
+}
+
+.appointment-stat {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.1rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 140px;
+}
+
+.stat-number {
+  color: #1e90ff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.appointment-calendar-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.2rem 1rem 0.5rem 1rem;
+}
+
+.calendar-box {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(30,144,255,0.08);
+  padding: 2.2rem 2.5rem 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.calendar-box label {
+  color: #002b8a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-box input[type="date"] {
+  margin: 0.7rem 0 1.5rem 0;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #cce6ff;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+  background: #f7fbff;
+  color: #222;
+}
+
+.calendar-box input[type="date"]:focus {
+  border: 1.5px solid #1e90ff;
+}
+
+.slots-section {
+  margin-bottom: 1.5rem;
+}
+
+.slots-section h3 {
+  color: #002b8a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.slots-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.slot-btn {
+  background: #e6f7ff;
+  color: #002b8a;
+  border: 1.5px solid #1e90ff;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+
+.slot-btn.selected, .slot-btn:hover {
+  background: #1e90ff;
+  color: #fff;
+  border: 1.5px solid #002b8a;
+}
+
+.no-slots {
+  color: #ff2222;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
+.book-btn {
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+.book-btn:disabled {
+  background: #b3eaff;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.booked-msg {
+  color: #1e90ff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.appointment-why-section {
+  margin: 1.5rem auto 0rem auto;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(147, 182, 217, 0.08);
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+}
+
+.appointment-why-title {
+  color: #002b8a;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.appointment-why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.appointment-why-card {
+  background: #e6f7ff;
+  border: 2px solid #1e90ff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(30,144,255,0.06);
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  min-width: 200px;
+  max-width: 260px;
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.appointment-why-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(30,144,255,0.13);
+}
+
+.appointment-why-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+
+.appointment-why-label {
+  color: #1e90ff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-why-desc {
+  color: #222;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .appointment-why-cards {
+    gap: 1rem;
+  }
+  .appointment-why-card {
+    min-width: 140px;
+    max-width: 100%;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  .appointment-why-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .appointment-header {
+    padding: 1.2rem 0.5rem 0.7rem 0.5rem;
+  }
+  .appointment-header h1 {
+    font-size: 1.2rem;
+  }
+  .appointment-stats {
+    gap: 1rem;
+  }
+  .appointment-stat {
+    min-width: 90px;
+    padding: 0.7rem 1rem;
+  }
+  .stat-number {
+    font-size: 1.1rem;
+  }
+  .stat-label {
+    font-size: 0.95rem;
+  }
+  .appointment-calendar-section {
+    padding: 1rem 0.2rem 2rem 0.2rem;
+  }
+  .calendar-box {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    min-width: unset;
+    max-width: 100%;
+  }
+  .slots-list {
+    gap: 0.3rem;
+  }
+  .slot-btn {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.95rem;
+  }
+  .book-btn {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  .appointment-why-section {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .appointment-why-title {
+    font-size: 1.2rem;
+  }
+  .appointment-why-cards {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .appointment-why-card {
+    min-width: 100px;
+    max-width: 100%;
+    padding: 0.7rem 0.5rem;
+  }
+  .appointment-why-icon {
+    font-size: 1.3rem;
+  }
+  .appointment-why-label {
+    font-size: 1rem;
+  }
+  .appointment-why-desc {
+    font-size: 0.97rem;
+  }
+}

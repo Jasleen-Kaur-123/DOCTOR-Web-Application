@@ -1,0 +1,333 @@
+.service-main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e6f7ff 0%, #b3eaff 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 0 0 2.5rem 0;
+}
+
+.service-header {
+  color: #002b8a;
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 1.5rem;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top:2rem ;
+  margin-bottom: 2.5rem;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(30,144,255,0.10);
+  padding: 1.5rem 1.2rem 2rem 1.2rem;
+  min-width: 240px;
+  max-width: 300px;
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(30,144,255,0.13);
+}
+
+.service-img {
+  width: 100%;
+  max-width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+}
+
+.service-title {
+  color: #1e90ff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-desc {
+  color: #222;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.service-homevisit-section {
+  margin: 3rem auto 0 auto;
+  max-width: 700px;
+  background: #fffbe6;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(255,193,7,0.10);
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-left: 8px solid #1e90ff;
+}
+
+.service-homevisit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6f7ff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  box-shadow: 0 2px 8px rgba(30,144,255,0.10);
+}
+
+.service-homevisit-content h2 {
+  color: #1e90ff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.service-homevisit-content p {
+  color: #222;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+}
+
+.service-bullets {
+  list-style: disc inside;
+  color: #1e90ff;
+  font-size: 1.02rem;
+  margin: 0.7rem 0 1.1rem 0;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+.service-bullets li {
+  color: #222;
+  margin-bottom: 0.3rem;
+  font-size: 1.02rem;
+  padding-left: 0.5rem;
+}
+
+.service-card-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+
+.service-btn {
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: 0 1px 4px rgba(30,144,255,0.08);
+}
+
+.call-btn {
+  background: #fff;
+  color: #1e90ff;
+  border: 2px solid #1e90ff;
+}
+
+.call-btn:hover {
+  background: #1e90ff;
+  color: #fff;
+}
+
+.book-btn {
+  background: #1e90ff;
+  color: #fff;
+  border: 2px solid #1e90ff;
+}
+
+.book-btn:hover {
+  background: #fff;
+  color: #1e90ff;
+}
+
+@media (max-width: 900px) {
+  .service-list {
+    gap: 1rem;
+  }
+  .service-card {
+    min-width: 160px;
+    max-width: 100%;
+    padding: 1rem 0.5rem 1.2rem 0.5rem;
+  }
+  .service-img {
+    max-width: 100px;
+    height: 70px;
+  }
+  .service-homevisit-section {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .service-homevisit-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+  .service-homevisit-content h2 {
+    font-size: 1.1rem;
+  }
+  .service-homevisit-content p {
+    font-size: 0.97rem;
+  }
+  .service-card-btns {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .service-btn {
+    width: 100%;
+    font-size: 0.97rem;
+    padding: 0.5rem 0.7rem;
+  }
+}
+.service-modal-heading{
+    color: #002b8a;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 40px 0px;
+}
+.service-reach-form {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(30,144,255,0.10);
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  max-width: 600px;
+  margin: 2.5rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.service-reach-row {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.service-reach-form input,
+.service-reach-form select,
+.service-reach-form textarea {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #cce6ff;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+  background: #f7fbff;
+  color: #222;
+  resize: none;
+}
+
+.service-reach-form input:focus,
+.service-reach-form select:focus,
+.service-reach-form textarea:focus {
+  border: 1.5px solid #1e90ff;
+}
+
+.service-reach-form textarea {
+  min-height: 60px;
+  max-width: 100%;
+}
+
+.service-reach-submit {
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background 0.18s;
+  width: 100%;
+}
+
+.service-reach-submit:hover {
+  background: #0077cc;
+}
+
+.service-reach-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-reach-modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(30,144,255,0.18);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  width: 90vw;
+  position: relative;
+  text-align: center;
+  animation: fadeInModal 0.2s;
+}
+
+@keyframes fadeInModal {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.service-reach-modal-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 1.1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #1e90ff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: color 0.18s;
+}
+
+.service-reach-modal-close:hover {
+  color: #ff2222;
+}
+
+@media (max-width: 700px) {
+  .service-reach-form {
+    padding: 1rem 0.7rem 1rem 0.7rem;
+    max-width: 98vw;
+  }
+  .service-reach-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .service-reach-modal {
+    padding: 1rem 0.7rem;
+    max-width: 95vw;
+  }
+}
